@@ -11,6 +11,9 @@ void FisherYatesShuffle(vector<int>& pool) {
 		swap(pool[i], pool[j]);
 	}
 }
+void ReservoirSampling(vector<int>& pool) {
+
+}
 int main()
 {
 	vector<int> pool(54);
@@ -21,7 +24,7 @@ int main()
 		else cout << pool[i] << " ";
 		if ((i + 1) % 9 == 0) cout << endl;
 	}
-	FisherYatesShuffle(pool);
+	//FisherYatesShuffle(pool);
 	cout <<endl<< "After Shuffle:" << endl;
 	for (int i = 0; i < 54; i++) {
 		if (pool[i] < 10) cout << pool[i] << "  ";
